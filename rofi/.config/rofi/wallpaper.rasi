@@ -1,0 +1,21 @@
+configuration {
+  show-icons:true;
+  modes: "filebrowser";
+
+  filebrowser {
+      /** Directory the file browser starts in. */
+      directory: "/home/hix/wallpaper";
+      /**
+        * Sorting method. Can be set to:
+        *   - "name"
+        *   - "mtime" (modification time)
+        *   - "atime" (access time)
+        *   - "ctime" (change time)
+        */
+      sorting-method: "name";
+      /** Group directories before files. */
+      directories-first: false;
+   }
+}
+
+@import "current2.rasi"

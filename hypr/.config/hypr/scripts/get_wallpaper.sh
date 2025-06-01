@@ -1,6 +1,6 @@
 #! /bin/bash
 
-current_wallpaper=$(waypaper --list | cut -d "\"" -f 8)
+current_wallpaper="$(cat $HOME/.cache/wal/wal)"
 
 echo "\$new_wallpaper=$current_wallpaper" > ~/.config/hypr/scripts/wallpaper
 
