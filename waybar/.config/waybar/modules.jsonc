@@ -132,7 +132,7 @@
 
   "custom/wallpaper": {
     "format": " ",
-    "on-click": "waypaper",
+    "on-click": "kitty --hold --detach $HOME/wallpapermenu.sh",
     //   "on-click-release": "sleep 3 && killall waybar && waybar",
     "tooltip": false
   },
