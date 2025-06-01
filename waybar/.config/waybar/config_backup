@@ -1,0 +1,104 @@
+[{
+  // sourced from header module //
+  "name": "bar1",
+  "layer": "top",
+  "position": "top",
+  "mod": "dock",
+  "height": 25,
+  "margin-top": 0, 
+  "margin-bottom": 0,
+
+  "include": [
+      "~/.config/waybar/modules.jsonc"
+  ],
+
+  "modules-left": [
+    "custom/left",
+    "hyprland/window",
+    "custom/right"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-right": [
+    "custom/left",
+    "group/networkgroup",
+    "custom/right",
+    "custom/left",
+    "group/clockdrawer",
+    "custom/right",
+    "custom/left",
+    "group/applaunchdrawer",
+    "custom/right"
+  ],
+
+  "group/clockdrawer": {
+    "orientation": "inherit",
+    "drawer": {
+    "transition-duration": 300,
+    "children-class": "power-drawer-child",
+    "transition-left-to-right": false
+  
+  },
+  "modules": [
+    "clock",
+    "pulseaudio",
+    "backlight",
+    "battery"
+  ]
+  },
+
+  "group/networkgroup": {
+    "orientation": "inherit",
+    "modules": [
+    "network",
+    "tray"
+  ]
+  },
+
+
+  "group/applaunchdrawer": {
+    "orientation": "inherit",
+    "drawer": {
+    "transition-duration": 300,
+    "children-class": "power-drawer-child",
+    "transition-left-to-right": false
+  
+  },
+  "modules": [
+    "custom/applauncher",
+    "custom/wallpaper"
+  ]
+  }
+}
+//{
+//  // second bar of the array //
+//   
+//  "name": "bar2",
+//  "layer": "top",
+//  "position": "bottom",
+//  "mod": "dock",
+//  "height": 43,
+//  "exclusive": true,
+//  "passthrough": false,
+//  "gtk-layer-shell": true,
+//  "reload_style_on_change": true,
+//
+//  "include": [
+//      "~/.config/waybar/modules.jsonc"
+//  ],
+//
+//  "modules-left": [
+//  ],
+//
+//  "modules-center": [
+//    "custom/bottomleft",
+//    "hyprland/workspaces",
+//    "custom/bottomright"
+//  ],
+//
+//  "modules-right": [
+//    ]
+//}
+]

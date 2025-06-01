@@ -1,0 +1,184 @@
+
+* {
+    font-family: "Hurmit Nerd Font Light";
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 10px;
+}   
+
+window.bar1#waybar {
+    background-color: rgba(26,27,38,0.8);
+    border-bottom: 2px solid #3f5efb;
+    border-radius: 0px 0px 22px 22px;    
+}
+
+window.bar2#waybar {
+    background-color: rgba(0,0,0,0);
+}
+
+
+#battery,
+#temperature,
+#clock,
+#workspaces,
+#window,
+#tray,
+#pulseaudio,
+#backlight,
+#network,
+#workspaces,
+#custom-applauncher,
+#custom-weather.severe,
+#custom-weather.sunnyDay,
+#custom-weather.clearNight,
+#custom-weather.cloudyFoggyDay, 
+#custom-weather.cloudyFoggyNight,
+#custom-weather.rainyDay, 
+#custom-weather.rainyNight,
+#custom-weather.showyIcyDay, 
+#custom-weather.snowyIcyNight,
+#custom-left,
+#custom-right,
+#custom-bottomleft,
+#custom-bottomright {
+   color: #ffffff;
+   background: #32302f;
+   margin: 8px 0px 8px 0px;
+   padding-left: 4px;
+   padding-right: 4px;
+   opacity: 1;
+   border: 0px solid #181825;
+}
+
+tooltip {
+   /* background: @tool-bg;*/
+    background: rgba(26,27,38,0.8);;
+    color: #ffffff;
+    border-radius: 22px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(63,94,251,1);
+}
+
+#workspaces button {
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0px;
+    border-radius: 9px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: #ffffff;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.active {
+    background: #3f5efb;
+    color: #d5c4a1;
+    margin-left: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 3px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button:hover {
+    background: #e94879;
+    border: none;
+}
+
+#workspaces {
+   padding: 0px;
+   margin: 8px 0px 8px 0px;
+   padding-left: 4px;
+   padding-right: 4px;
+   background: rgba(26,27,38,0.8);
+}
+
+#window {
+    color: #e94879; 
+}
+
+#custom-weather.severe {
+    color: #3ca6a1;
+}
+
+#custom-weather.sunnyDay {
+    color: #3ca6a1;
+}
+
+#custom-weather.clearNight {
+    color: #3ca6a1;
+}
+
+#custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
+    color: #3ca6a1;
+}
+
+#custom-weather.rainyDay, #custom-weather.rainyNight {
+    color: #3ca6a1;
+}
+
+#custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
+    color: #3ca6a1;
+}
+
+#custom-weather.default {
+    color: #3ca6a1;
+}
+
+#temperature {
+    color: #eebd35;
+}
+
+#temperature.critical {
+    color: #ff0000;
+}
+
+#battery {
+    color: #458588;
+}
+
+#pulseaudio {
+    color: #ebdbb2;
+}
+
+#backlight {
+    color: #ebdbb2;
+}
+
+#clock {
+   color: #ebdbb2;
+}
+
+#network {
+    color: #328f37;
+}
+
+#custom-right {
+    border-radius: 0px 22px 22px 0px;
+    margin-right: 9px;
+    padding-right: 3px;
+}
+
+#custom-left {
+    border-radius: 22px 0px 0px 22px;
+    margin-left: 9px;
+    padding-left: 3px;
+}
+#custom-bottomright {
+    background: rgba(26,27,38,0.8);
+    border-radius: 0px 22px 22px 0px;
+    margin-right: 9px;
+    padding-right: 3px;
+}
+
+#custom-bottomleft {
+    background: rgba(26,27,38,0.8);
+    border-radius: 22px 0px 0px 22px;
+    margin-left: 9px;
+    padding-left: 3px;
+}

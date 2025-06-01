@@ -1,0 +1,190 @@
+/*@import url('file:///home/hix/.cache/wal/config-waybar.css');*/
+
+* {
+  font-family: "JetBrainsMonoNL Nerd Font";
+  font-size: 14px;
+  min-height: 10px;
+}
+
+window.bar1#waybar {
+  background-color: rgba(30, 30, 46, 1);
+  border-radius: 0;
+
+}
+
+.modules-left {
+  padding-left: 20px;
+}
+
+.modules-right {
+  padding-right: 20px;
+}
+
+
+#battery,
+#network,
+#temperature,
+#clock,
+#workspaces,
+#window,
+#tray,
+#pulseaudio,
+#backlight,
+#workspaces,
+#custom-applauncher,
+#custom-wallpaper,
+#clockdrawer {
+  color: black;
+  margin: 2px 10px 2px 10px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+tooltip {
+  /* background: @tool-bg;*/
+  background: rgba(26, 27, 38, 0.8);
+  color: white;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white; 
+}
+
+#window {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#workspaces button {
+  box-shadow: none;
+  text-shadow: none;
+  padding: 0px;
+  border-radius: 9px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: white;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+#workspaces button.active {
+  background: #f9e2af;
+  color: black;
+  margin-left: 3px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: 3px;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+#workspaces button:hover {
+  color: white;
+  background: #7f849c;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: none;
+}
+
+#workspaces {
+  padding: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#window {
+  color: white;
+}
+
+#tray {
+  background-color: #7f849c;
+  border-radius: 9px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+#tray:hover {
+  background-color: #a6adc8;
+}
+
+#network {
+  color: white;
+  background-color: #7f849c;
+  border-radius: 9px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin: 2px 0 2px 0;
+}
+
+#network:hover {
+  color: black;
+  background-color: #f9e2af;
+}
+
+#clockdrawer {
+  background-color: #7f849c;
+  padding: 0;
+  border-radius: 9px;
+}
+
+#clockdrawer:hover {
+  background-color: #f9e2af;
+}
+
+#clockdrawer:hover #clock {
+  color:black;
+}
+
+.clock-drawer-child {
+  background-color: #89dceb;
+}
+
+
+.clock-drawer-child:first-child {
+  background-color: #89b4fa;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+.clock-drawer-child:last-child {
+  background-color: #a6e3a1;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+#clock {
+  color: white;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin: 2px 0 2px 0;
+}
+
+#clock:hover {
+  color: black;
+  background-color: #f9e2af;
+  border-radius: 9px;
+  margin: 0;
+}
+
+#pulseaudio,
+#backlight,
+#battery {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: black;
+}
+
+#custom-applauncher {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 0;
+  color: white;
+}
+
+#custom-wallpaper {
+  margin-left: 12px;
+  margin-right: 12px;
+  color: white;
+}

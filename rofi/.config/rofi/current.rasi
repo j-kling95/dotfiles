@@ -1,0 +1,224 @@
+/**
+ * rofi -dump-theme output.
+ * Rofi version: 1.7.7+wayland1
+ **/
+
+@import "/home/hix/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+    font:             "JetBrainsMonoNL Nerd Font 10";
+}
+window {
+    padding:          1px;
+    background-color: @background;
+    border:           0;
+    width:            100%;
+    location:         north west;
+    anchor:           north;
+    y-offset:         -29;
+}
+
+mainbox {
+    orientation: horizontal;
+}
+
+inputbar {
+    padding:    0px ;
+    spacing:    0px ;
+    text-color: #ffffff;
+    children:   [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
+}
+
+prompt {
+    spacing:          0;
+    text-color:       #ffffff;
+    margin:           0px 0px 0px 25px;
+    width:            50px;
+    vertical-align:   0.5;
+}
+
+textbox-prompt-colon {
+    vertical-align: 0.5;
+    spacing:        5px;
+}
+
+entry {
+    text-color:        #ffffff;
+    cursor:            text;
+    spacing:           0;
+    width:             200px;
+    placeholder:       "Type here";
+    vertical-align:    0.5;
+}
+
+
+num-filtered-rows {
+    enabled: false; 
+}
+
+textbox-num-sep {
+    enabled: false;
+}
+
+num-rows {
+    enabled: false;
+}
+
+case-indicator {
+    enabled: false;
+}
+
+message {
+    enabled: true;
+}
+
+textbox {
+    enabled: false;
+}
+
+listview {
+    layout:       horizontal;
+    flow:         horizontal;
+    border:       0;
+}
+
+element {
+    padding: 2px;
+    cursor:  default;
+    spacing: 0px;
+    width:   200px;
+    text-color:       white;
+    background-color: transparent;
+}
+
+element.normal.normal {
+    background-color: transparent;
+    text-color:       white;
+    width:    200px;
+}
+
+element.normal.urgent {
+    background-color: transparent;
+    text-color:       white;
+}
+
+element.normal.active {
+    background-color: transparent;
+    text-color:       white;
+}
+
+element.selected.normal {
+    background-color: @foreground;
+    text-color:       white;
+    border-radius:    0px;
+}
+
+element.selected.urgent {
+    background-color: transparent;
+    text-color:       white;
+}
+
+element.selected.active {
+    background-color: transparent;
+    text-color:       white;
+}
+
+element.alternate.normal {
+    background-color: transparent;
+    text-color:       white;
+}
+
+element.alternate.urgent {
+    background-color: transparent;
+    text-color:       white;
+}
+
+element.alternate.active {
+    background-color: transparent;
+    text-color:       white;
+}
+
+element-icon {
+    padding:          0px 0px 0px 4px;
+    margin:           0px;
+    background-color: transparent;
+    size:             1.0000em ;
+}
+
+element-text {
+    padding:          0px 0px 0px 4px;
+    margin:           0px;
+}
+
+element-text.normal.normal {
+    highlight:        transparent;
+    text-color:       inherit;
+    background-color: inherit;
+}
+
+element-text.normal.active {
+    highlight:        transparent;
+    text-color:       #1e1e2e;
+    background-color: inherit;
+}
+
+element-text.normal.urgent {
+    highlight:        transparent;
+    text-color:       #1e1e2e;
+    background-color: inherit;
+}
+
+element-text.selected.normal {
+    highlight:        transparent;
+    text-color:       #1e1e2e;
+    background-color: inherit;
+}
+
+element-text.selected.urgent {
+    highlight:        transparent;
+    text-color:       inherit;
+    background-color: inherit;
+}
+
+element-text.selected.active {
+    highlight:        transparent;
+    text-color:       inherit;
+    background-color: inherit;
+}
+
+element-text.alternate.normal {
+    highlight:        transparent;
+    text-color:       inherit;
+    background-color: inherit;
+}
+
+element-text.alternate.urgent {
+    highlight:        transparent;
+    text-color:       inherit;
+    background-color: inherit;
+}
+
+element-text.alternate.active {
+    highlight:        transparent;
+    text-color:       inherit;
+    background-color: inherit;
+}
+
+scrollbar {
+    enabled: false;
+}
+
+sidebar {
+    enabled: false;
+}
+button {
+    enabled: false;
+}
+button selected {
+    enabled: false;
+}
+
+
+
+
+

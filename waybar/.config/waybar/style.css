@@ -1,0 +1,221 @@
+@import url('file:///home/hix/.cache/wal/colors-waybar.css');
+
+* {
+  font-family: "JetBrainsMonoNL Nerd Font";
+  font-size: 14px;
+  min-height: 10px;
+}
+
+window.bar1#waybar {
+  background-color: @background;
+
+}
+
+.modules-left {
+  padding-left: 20px;
+}
+
+.modules-right {
+  padding-right: 20px;
+}
+
+
+#network,
+#workspaces,
+#window,
+#tray,
+#workspaces,
+#custom-applauncher,
+#custom-wallpaper,
+#custom-weather,
+#clockdrawer {
+  color: black;
+  margin: 3px 10px 3px 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 9px;
+}
+
+tooltip {
+  /* background: @tool-bg;*/
+  background: rgba(26, 27, 38, 0.8);
+  color: white;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white; 
+}
+
+#workspaces button {
+  box-shadow: none;
+  text-shadow: none;
+  padding: 0px;
+  border-radius: 9px;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: white;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+#workspaces button.active {
+  background: @color4; 
+  color: black;
+  margin-left: 3px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: 3px;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+#workspaces button:hover {
+  color: white;
+  background: @color14;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: none;
+}
+
+#workspaces {
+  padding: 0px;
+}
+
+#window {
+  color: white;
+}
+
+#custom-weather{
+  background-color: @color4;
+  border-radius: 9px;
+  color: white;
+}
+
+#custom-weather:hover{
+  color: black;
+  background-color: @color14;
+}
+
+#tray {
+  background-color: @color4;
+  border-radius: 9px;
+}
+
+#tray:hover {
+  background-color: @color14;
+}
+
+#network {
+  color: white;
+  background-color: @color4;
+  border-radius: 9px;
+}
+
+#network:hover {
+  color: black;
+  background-color: @color14;
+}
+
+#clockdrawer {
+  background-color: @color14;
+  border-radius: 9px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+#clockdrawer:hover {
+  background-color: @color14;
+  padding-left: 12px;
+  border-radius: 9px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @color14; 
+}
+
+#clockdrawer:hover #clock {
+  color: black;
+  background-color: @color14;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#clockdrawer:hover #clock:hover {
+  color: black;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.clock-drawer-child {
+  border-radius: 9px;
+}
+
+.clock-drawer-child > #pulseaudio {
+  background-color: @color12;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+.clock-drawer-child > #pulseaudio:hover {
+  background-color: @color14;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+.clock-drawer-child > #backlight {
+  background-color: @color13;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.clock-drawer-child > #backlight:hover {
+  background-color: @color14;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.clock-drawer-child > #battery {
+  background-color: @color15;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.clock-drawer-child > #battery:hover {
+  background-color: @color14;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+
+#clock {
+  color: white;
+  background-color: @color4;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 9px;
+}
+
+#clock:hover {
+  color: black;
+  background-color: @color14;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 9px;
+}
+
+#custom-applauncher {
+  color: white;
+  padding-right: 0;
+}
+
+#custom-wallpaper {
+  color: white;
+  padding-right: 0;
+}

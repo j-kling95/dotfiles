@@ -1,0 +1,69 @@
+[{
+  // sourced from header module //
+  "name": "bar1",
+  "layer": "top",
+  "position": "top",
+  "mod": "dock",
+  "height": 43,
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+
+  "include": [
+      "~/.config/waybar/modules.jsonc"
+  ],
+
+  "modules-left": [
+    "custom/left",
+    "custom/weather",
+    "custom/right",
+    "custom/left",
+    "temperature",
+    "custom/right"
+  ],
+  "modules-center": [
+    "custom/left",
+    "hyprland/window",
+    "custom/right"
+  ],
+  "modules-right": [
+    "custom/left",
+    "battery",
+    "custom/right",
+    "custom/left",
+    "network",
+    "custom/right",
+    "custom/left",
+    "backlight",
+    "pulseaudio",
+    "clock",
+    "custom/right",
+    "custom/left",
+    "custom/applauncher",
+    "custom/right"
+  ]
+},
+{
+  // second bar of the array //
+   
+  "name": "bar2",
+  "layer": "top",
+  "position": "bottom",
+  "mod": "dock",
+  "height": 43,
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+
+  "include": [
+      "~/.config/waybar/modules.jsonc"
+  ],
+
+  "modules-center": [
+    "custom/bottomleft",
+    "hyprland/workspaces",
+    "custom/bottomright"
+  ]
+
+}
+]
