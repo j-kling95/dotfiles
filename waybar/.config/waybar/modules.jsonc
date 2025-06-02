@@ -132,7 +132,7 @@
 
   "custom/wallpaper": {
     "format": " ",
-    "on-click": "hyprctl dispatch exec sh $HOME/wallpapermenu.sh & disown",
+    "on-click": "hyprctl dispatch exec sh $HOME/.config/hypr/scripts/wallpapermenu.sh & disown",
     //   "on-click-release": "sleep 3 && killall waybar && waybar",
     "tooltip": false
   },
