@@ -6,7 +6,7 @@
 @import "/home/hix/.cache/wal/colors-rofi-dark.rasi"
 
 * {
-    font:             "JetBrainsMonoNL Nerd Font 70";
+    font:             "JetBrainsMonoNL Nerd Font 20";
 }
 
 window {
@@ -20,9 +20,9 @@ window {
 
 mainbox {
     orientation: vertical;
-    spacing:      20px;
+    spacing:      0px;
+    padding:      0px;
     border:       0px solid;
-    
 }
 
 inputbar {
@@ -35,6 +35,7 @@ inputbar {
 }
 
 prompt {
+    enabled:          false;
     border:           0px solid;
     spacing:          0;
     text-color:       #ffffff;
@@ -44,18 +45,21 @@ prompt {
 }
 
 textbox-prompt-colon {
+    enabled:        false;
     vertical-align: 0.5;
     spacing:        5px;
     border:         0px solid;
 }
 
 entry {
+    enabled:           false;
     text-color:        #ffffff;
     cursor:            text;
     spacing:           0;
     width:             200px;
     placeholder:       "Type here";
     vertical-align:    0.5;
+    border:            0px solid;
 }
 
 
@@ -99,15 +103,19 @@ listview {
 
 element {
     enabled:          true;
-    padding:          5px;
+    padding:          0px;
     cursor:           pointer;
-    spacing:          15px;
+    spacing:          0px;
     text-color:       white;
     background-color: transparent;
     orientation:      vertical;
+    border:           0px solid;
 }
 
 element-icon {
+    border:           0px solid;
+    size:             128px;
+    
 }
 
 element-text {
@@ -121,7 +129,6 @@ element-index {
 element.normal.normal {
     background-color: transparent;
     text-color:       white;
-    width:    200px;
 }
 
 element.normal.urgent {
@@ -163,18 +170,6 @@ element.alternate.urgent {
 element.alternate.active {
     background-color: transparent;
     text-color:       white;
-}
-
-element-icon {
-    padding:          0px 0px 0px 4px;
-    margin:           0px;
-    background-color: transparent;
-    size:             1.0000em ;
-}
-
-element-text {
-    padding:          0px 0px 0px 4px;
-    margin:           0px;
 }
 
 element-text.normal.normal {
@@ -244,8 +239,3 @@ button {
 button selected {
     enabled: false;
 }
-
-
-
-
-

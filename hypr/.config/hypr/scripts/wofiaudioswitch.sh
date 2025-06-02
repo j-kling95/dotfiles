@@ -4,17 +4,23 @@ headphones (){
   notify-send "Audio source" "Switched to headphones sound"
 }
 
+earbuds (){
+  pactl set-default-sink "bluez_output.60_3A_AF_EB_16_4A.1" &&
+  notify-send "Audio source" "Switched to earbuds sound"
+}
+
 speakers (){
-  pactl set-default-sink 56 &
+  pactl set-default-sink 56 &&
   notify-send "Audio source" "Switched to speaker sound"
 }
 
 choosespeakers() { 
-  choice=$(printf "Headphones\\nSpeakers" | rofi -dmenu -I -no-show-icons -p "Choose output")
+  choice=$(printf "Headphones\\nEarbuds\\nSpeakers" | rofi -dmenu -I -no-show-icons -p "Choose output")
 
   case "$choice" in
     Headphones) headphones;;
     Speakers) speakers;;
+    Earbuds) earbuds;;
   esac
 }
 
