@@ -22,7 +22,7 @@ eval "$(batman --export-env)"
 eval "$(fzf --bash)"
 
 export EDITOR=nvim
-export nova="28:9A:4B:FA:32:58"
+export nova="28:9A:4B:FA:32:58 0000111e-0000-1000-8000-00805f9b34fb"
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 
 function y() {

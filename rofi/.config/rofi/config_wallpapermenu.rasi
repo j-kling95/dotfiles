@@ -1,6 +1,9 @@
 configuration {
-  show-icons:true;
+  show-icons: true;
   modes: "filebrowser";
+  hover-select: true;
+  me-select-entry: "";
+  me-accept-entry: [MousePrimary];
 
   filebrowser {
       /** Directory the file browser starts in. */
@@ -18,4 +21,4 @@ configuration {
    }
 }
 
-@import "current2.rasi"
+@import "wallpapermenu_theme.rasi"

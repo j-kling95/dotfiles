@@ -1,0 +1,247 @@
+/**
+ * rofi -dump-theme output.
+ * Rofi version: 1.7.7+wayland1
+ **/
+
+@import "/home/hix/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+    font:                 "JetBrainsMonoNL Nerd Font 20";
+}
+
+window {
+    padding:              0px;
+    background-color:     @background;
+    border:               0px solid;
+    width:                1000px;
+    location:             center;
+    anchor:               center;
+    margin:               0;
+}
+
+mainbox {
+    orientation:          vertical;
+    spacing:              0px;
+    padding:              0px;
+    border:               0px solid;
+    margin:               -2px 0px 0px 0px;
+}
+
+inputbar {
+    enabled:              true;
+    padding:              0px ;
+    spacing:              0px ;
+    text-color:           #ffffff;
+    border:               0px solid;
+    background-color:     red;
+    children:             [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
+}
+
+prompt {
+    enabled:              false;
+    border:               0px solid;
+    spacing:              0;
+    text-color:           #ffffff;
+    margin:               0px 0px 0px 25px;
+    width:                50px;
+    vertical-align:       0.5;
+}
+
+textbox-prompt-colon {
+    enabled:              false;
+    vertical-align:       0.5;
+    spacing:              5px;
+    border:               0px solid;
+}
+
+entry {
+    enabled:              false;
+    text-color:           #ffffff;
+    cursor:               text;
+    spacing:              0;
+    width:                200px;
+    placeholder:          "Type here";
+    vertical-align:       0.5;
+    border:               0px solid;
+}
+
+
+num-filtered-rows {
+    enabled:              false; 
+}
+
+textbox-num-sep {
+    enabled:              false;
+}
+
+num-rows {
+    enabled:              false;
+}
+
+case-indicator {
+    enabled:              false;
+}
+
+message {
+    enabled:              false;
+    border:               0px solid;
+}
+
+textbox {
+    enabled:              false;
+    border:               0px solid;
+}
+
+listview {
+    enabled:              true;
+    columns:              4;
+    lines:                4;
+    cycle:                true;
+    layout:               vertical;
+    fixed-height:         true;
+    fixed-columns:        true;
+    border:               0px solid;
+    margin:               0px;
+}
+
+element {
+    enabled:              true;
+    padding:              0px;
+    maring:               0px;
+    cursor:               pointer;
+    spacing:              0px;
+    text-color:           white;
+    background-color:     transparent;
+    orientation:          vertical;
+    border:               0px solid;
+}
+                          
+element-icon {
+    border:               0px solid;
+    size:                 175px;
+    margin:               0;
+    padding:              0;
+    
+}
+
+element-text {
+    enabled:              false;
+}
+
+element-index {
+    enabled:              false;
+}
+
+element.normal.normal {
+    background-color:     transparent;
+    text-color:           white;
+}
+
+element.normal.urgent {
+    background-color:     transparent;
+    text-color:           white;
+}
+
+element.normal.active {
+    background-color:     transparent;
+    text-color:           white;
+}
+
+element.selected.normal {
+    background-color:     @foreground;
+    text-color:           white;
+    border-radius:        0px;
+}
+
+element.selected.urgent {
+    background-color:     transparent;
+    text-color:           white;
+}
+
+element.selected.active {
+    background-color:     transparent;
+    text-color:           white;
+}
+
+element.alternate.normal {
+    background-color:     transparent;
+    text-color:           white;
+}
+
+element.alternate.urgent {
+    background-color:     transparent;
+    text-color:           white;
+}
+
+element.alternate.active {
+    background-color:     transparent;
+    text-color:           white;
+}
+
+element-text.normal.normal {
+    highlight:            transparent;
+    text-color:           inherit;
+    background-color:     inherit;
+}
+
+element-text.normal.active {
+    highlight:            transparent;
+    text-color:           #1e1e2e;
+    background-color:     inherit;
+}
+
+element-text.normal.urgent {
+    highlight:            transparent;
+    text-color:           #1e1e2e;
+    background-color:     inherit;
+}
+
+element-text.selected.normal {
+    highlight:            transparent;
+    text-color:           #1e1e2e;
+    background-color:     inherit;
+}
+
+element-text.selected.urgent {
+    highlight:            transparent;
+    text-color:           inherit;
+    background-color:     inherit;
+}
+
+element-text.selected.active {
+    highlight:            transparent;
+    text-color:           inherit;
+    background-color:     inherit;
+}
+
+element-text.alternate.normal {
+    highlight:            transparent;
+    text-color:           inherit;
+    background-color:     inherit;
+}
+
+element-text.alternate.urgent {
+    highlight:            transparent;
+    text-color:           inherit;
+    background-color:     inherit;
+}
+
+element-text.alternate.active {
+    highlight:            transparent;
+    text-color:           inherit;
+    background-color:     inherit;
+}
+
+scrollbar {
+    enabled:              false;
+}
+
+sidebar {
+    enabled:              false;
+}
+button {
+    enabled:              false;
+}
+button selected {
+    enabled:              false;
+}

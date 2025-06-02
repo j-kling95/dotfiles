@@ -126,7 +126,7 @@
 
   "custom/applauncher": {
     "format": " ",
-    "on-click": "rofi -show drun",
+    "on-click": "rofi -show drun -config ~/.config/rofi/config_dmenu.rasi",
     "tooltip": false
   },
 

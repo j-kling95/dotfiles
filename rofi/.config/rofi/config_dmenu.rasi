@@ -9,4 +9,4 @@ no-click-to-exit: true;
 
 }
 
-@import "current.rasi"
+@import "dmenu_theme.rasi"

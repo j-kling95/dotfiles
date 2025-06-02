@@ -3,7 +3,7 @@
 FOLDER=~/wallpaper
 
 menu () {
-  WALLPAPER="$(for a in $HOME/wallpaper/*; do echo -en "$a\0icon\x1f$a\n" ; done | rofi -dmenu -config ~/dotfiles/rofi/.config/rofi/wallpaper.rasi)"
+  WALLPAPER="$(for a in $HOME/wallpaper/*; do echo -en "$a\0icon\x1f$a\n" ; done | rofi -dmenu -config ~/.config/rofi/config_wallpapermenu.rasi)"
 
 
   case "$WALLPAPER" in
