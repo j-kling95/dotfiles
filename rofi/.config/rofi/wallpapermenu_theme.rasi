@@ -97,11 +97,13 @@ listview {
     columns:              4;
     lines:                4;
     cycle:                true;
-    layout:               vertical;
     fixed-height:         true;
+    layout:               vertical;
+    flow:                 horizontal;
     fixed-columns:        true;
     border:               0px solid;
     margin:               0px;
+    spacing:              0;
 }
 
 element {
