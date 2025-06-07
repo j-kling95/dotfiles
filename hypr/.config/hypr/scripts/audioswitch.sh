@@ -15,7 +15,7 @@ speakers (){
 }
 
 choosespeakers() { 
-  choice=$(printf "Headphones\\nEarbuds\\nSpeakers" | rofi -dmenu -I -no-show-icons -p "Choose output" -config ~/.config/rofi/config_dmenu.rasi)
+  choice=$(printf "Earbuds\\nHeadphones\\nSpeakers" | rofi -dmenu -I -no-show-icons -p "Choose output" -config ~/.config/rofi/config_dmenu.rasi)
 
   case "$choice" in
     Headphones) headphones;;

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 chooseoption () {
-  CHOICE=$(echo -e "Poweroff\\nReboot\\nLock" | rofi -I -dmenu -config ~/.config/rofi/config_dmenu.rasi -p "Choose option")
+  CHOICE=$(echo -e "Lock\\nPoweroff\\nreboot" | rofi -I -dmenu -config ~/.config/rofi/config_dmenu.rasi -p "Choose option")
 
   case $CHOICE in
     Poweroff)
