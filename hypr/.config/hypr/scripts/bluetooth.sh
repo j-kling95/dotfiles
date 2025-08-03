@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-choice=$(bluetoothctl devices | cut -f 3- -d " " | sort | rofi -I -dmenu -config ~/.config/rofi/config_dmenu.rasi -p "Choose device") 
+choice=$(bluetoothctl devices | sed -n '/^Device/p' | cut -f 3- -d " " | awk NF | sort | rofi -I -dmenu -config ~/.config/rofi/config_dmenu.rasi -p "Choose device") 
 
 address=$(bluetoothctl devices | sed -n "/$choice/p" | cut -f 2 -d " ")
 
