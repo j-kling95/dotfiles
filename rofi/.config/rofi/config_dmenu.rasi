@@ -6,7 +6,6 @@ display-drun: "Apps";
 sort: true;
 drun-display-format: "{name}";
 no-click-to-exit: true;
-
 }
 
 @import "dmenu_theme.rasi"

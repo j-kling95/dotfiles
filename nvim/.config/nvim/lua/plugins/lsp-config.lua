@@ -26,28 +26,16 @@ return {
 		config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-			local lspconfig = require("lspconfig")
-			lspconfig.lua_ls.setup({
-        capabilities = capabilities
-      })
-			lspconfig.bashls.setup({
-        capabilities = capabilities
-      })
-			lspconfig.html.setup({
-        capabilities = capabilities
-      })
-			lspconfig.ts_ls.setup({
-        capabilities = capabilities
-      })
-			lspconfig.pyright.setup({
-        capabilities = capabilities
-      })
-			lspconfig.cssls.setup({
-        capabilities = capabilities
-      })
-			lspconfig.jsonls.setup({
-        capabilities = capabilities
-      })
+			local lspconfig = vim.lsp.config["lspconfig"]
+
+      vim.lsp.enable("lua_ls")
+      vim.lsp.enable("ts_ls")
+      vim.lsp.enable("pyright")
+      vim.lsp.enable("cssls")
+      vim.lsp.enable("jsonls")
+      vim.lsp.enable("bashls")
+      vim.lsp.enable("html")
+
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})

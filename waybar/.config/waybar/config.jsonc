@@ -3,7 +3,7 @@
   "name": "bar1",
   "layer": "top",
   "position": "top",
-  "mod": "dock",
+  "mode": "dock",
   "height": 30,
   "include": [
       "~/.config/waybar/modules.jsonc"

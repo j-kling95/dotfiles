@@ -15,7 +15,7 @@ window {
     width:            100%;
     location:         north west;
     anchor:           north;
-    y-offset:         -29;
+    y-offset:         -29px;
 }
 
 mainbox {
