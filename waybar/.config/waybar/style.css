@@ -1,7 +1,7 @@
 @import url('file:///home/hix/.cache/wal/colors-waybar.css');
 
 * {
-  font-family: "JetBrainsMonoNL Nerd Font";
+  font-family: "DroidSansM Nerd Font";
   font-size: 14px;
   min-height: 10px;
 }
@@ -36,15 +36,26 @@ window.bar1#waybar {
   border-radius: 9px;
 }
 
-tooltip {
-  /* background: @tool-bg;*/
-  background: rgba(26, 27, 38, 0.8);
-  color: white;
-  border-radius: 5px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: white; 
+
+tooltip,
+tooltip * {
+  background: transparent;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
 }
+
+
+tooltip label {
+  background: @background;
+  padding: 10px 20px;
+  border: 2px solid @color4;
+  border-radius: 9px;
+}
+
+
 
 #workspaces button {
   box-shadow: none;

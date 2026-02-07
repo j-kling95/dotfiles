@@ -1,11 +1,11 @@
 #!/bin/bash
 headphones (){
-  pactl set-default-sink "bluez_output.28_9A_4B_FA_32_58.1" &&
+  pactl set-default-sink "bluez_output.28:9A:4B:FA:32:58" &&
   notify-send "Audio source" "Switched to headphones sound"
 }
 
 earbuds (){
-  pactl set-default-sink "bluez_output.60_3A_AF_EB_16_4A.1" &&
+  pactl set-default-sink "bluez_output.60:3A:AF:EB:16_4A" &&
   notify-send "Audio source" "Switched to earbuds sound"
 }
 

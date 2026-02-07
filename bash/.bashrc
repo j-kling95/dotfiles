@@ -12,7 +12,7 @@ PS1='[\u@\h \W]\$ '
 alias ll="ls -lah"
 alias vim="nvim"
 alias rm="rm -i"
-alias code="code-oss --ozone-platform=wayland"
+alias code="code --ozone-platform=wayland"
 
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
@@ -35,3 +35,5 @@ function y() {
 }
 
 export -f y
+
+source /usr/share/nvm/init-nvm.sh

@@ -30,11 +30,13 @@ menu () {
 }
 
 refresh () {
-  swww img $WALLPAPER;
+  awww img $WALLPAPER;
+  echo "Wallpaper changed"
   pkill waybar; source $HOME/.config/waybar/venv/bin/activate && hyprctl dispatch exec waybar;
   bash $HOME/.config/dunst/pywal.sh;
 #  echo "\$new_wallpaper=$WALLPAPER" > ~/.config/hypr/scripts/wallpaper
   sed -i "1c\$new_wallpaper=$WALLPAPER" ~/.config/hypr/hyprlock.conf 
+  kill -SIGUSR1 $KITTY-PID
 }
 
 menu

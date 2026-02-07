@@ -17,6 +17,7 @@ return {
 					"jsonls",
           "bashls",
           "html",
+          "hyprls",
 				},
 			})
 		end,
@@ -35,6 +36,7 @@ return {
       vim.lsp.enable("jsonls")
       vim.lsp.enable("bashls")
       vim.lsp.enable("html")
+      vim.lsp.enable("hyprls")
 
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
